@@ -136,6 +136,36 @@
                                     display: "/unvip @username",
                                     description: "Revoke VIP status from a user",
                                     text: "/unvip"
+                                },
+                                {
+                                    display: "/followers [followage]",
+                                    description: "Enable Followers Only chat",
+                                    text: "/followers"
+                                },
+                                {
+                                    display: "/followersoff",
+                                    description: "Turn off Followers Only chat",
+                                    text: "/followersoff"
+                                },
+                                {
+                                    display: "/slow [duration]",
+                                    description: "Turn on Slow Mode for chat",
+                                    text: "/slow"
+                                },
+                                {
+                                    display: "/slowoff",
+                                    description: "Turn off Slow Mode for chat",
+                                    text: "/slowoff"
+                                },
+                                {
+                                    display: "/uniquechat",
+                                    description: "Turn on Unique Mode for chat",
+                                    text: "/uniquechat"
+                                },
+                                {
+                                    display: "/uniquechatoff",
+                                    description: "Turn off Unique Mode for chat",
+                                    text: "/uniquechatoff"
                                 }
                             ]
                         },
