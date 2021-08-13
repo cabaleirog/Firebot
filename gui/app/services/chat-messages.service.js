@@ -326,6 +326,10 @@
                 service.clearUserList();
             });
 
+            backendCommunicator.on("twitch:chat:clear-chat", () => {
+                service.clearChatQueue();
+            });
+
             backendCommunicator.on("twitch:chat:user-active", id => {
                 const user = service.chatUsers.find(u => u.id === id);
                 if (user != null) {

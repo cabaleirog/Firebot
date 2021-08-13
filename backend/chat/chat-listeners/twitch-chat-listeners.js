@@ -123,4 +123,9 @@ exports.setupChatListeners = (streamerChatClient) => {
         twitchEventsHandler.viewerTimeout.triggerTimeout(username, duration);
         frontendCommunicator.send("twitch:chat:user:delete-messages", username);
     });
+    
+    streamerChatClient.onChatClear(() => {
+        logger.debug('Channel got cleared!');
+        frontendCommunicator.send("twitch:chat:clear-chat");
+    });
 };
